@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #f39618;
+  --secondary: #691790;
+
+  --brand-gradient: linear-gradient(45deg, var(--primary), var(--secondary));
+  --brand-gradient-soft: linear-gradient(
+    135deg,
+    rgba(243, 150, 24, 0.12),
+    rgba(105, 23, 144, 0.12)
+  );
+
+  --background: #ffffff;
+  --surface: #faf7fc;
+  --surface-alt: #f4eef8;
+
+  --text: #1a1024;
+  --muted: #6b6575;
+  --border: #e8e2ee;
+
+  --white: #ffffff;
+  --danger: #d9534f;
+  --danger-dark: #b52b27;
+
+  --heading-font: "Space Grotesk", sans-serif;
+  --body-font: "Inter", sans-serif;
+
+  --body-font-size: 1rem;
+  --nav-font-size: 0.9rem;
+  --button-font-size: 0.88rem;
+  --heading-font-size: 3.5rem;
+  --section-heading-font-size: 2.5rem;
+
+  --body-font-weight: 400;
+  --nav-font-weight: 500;
+  --button-font-weight: 600;
+  --heading-font-weight: 700;
+  --section-heading-font-weight: 600;
+  --line-height: 1.7;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 40px;
+  --radius-round: 50%;
+
+  --transition: all 0.3s ease;
+  --theme-transition: background-color 0.35s ease, color 0.35s ease;
+
+  --shadow-soft: 0 8px 24px rgba(26, 16, 36, 0.06);
+  --shadow-dropdown: 0 18px 40px rgba(26, 16, 36, 0.12);
+  --shadow-panel: 0 20px 45px rgba(26, 16, 36, 0.16);
+  --shadow-brand: 0 12px 26px rgba(105, 23, 144, 0.22);
+  --shadow-primary: 0 12px 26px rgba(243, 150, 24, 0.25);
+
+  --primary-btn-bg: var(--brand-gradient);
+  --primary-btn-color: var(--white);
+  --primary-btn-hover-bg: var(--secondary);
+  --primary-btn-border: transparent;
+
+  --secondary-btn-bg: transparent;
+  --secondary-btn-color: var(--secondary);
+  --secondary-btn-hover-bg: var(--secondary);
+  --secondary-btn-hover-color: var(--white);
+  --secondary-btn-border: var(--secondary);
+}
+
+body.dark-mode {
+  --text: #f5f1f8;
+  --muted: #b6aec2;
+
+  --background: #0d0714;
+  --surface: #150b20;
+  --surface-alt: #1d1129;
+  --border: rgba(255, 255, 255, 0.09);
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.22);
+  --shadow-dropdown: 0 18px 40px rgba(0, 0, 0, 0.32);
+  --shadow-panel: 0 20px 45px rgba(0, 0, 0, 0.4);
+
+  --secondary-btn-color: var(--white);
+  --secondary-btn-border: rgba(255, 255, 255, 0.18);
+  --secondary-btn-hover-bg: var(--primary);
+  --secondary-btn-hover-color: #1a1024;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+  transition: var(--theme-transition);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p,
+a,
+li,
+label,
+input,
+textarea,
+select,
+option,
+button {
+  font-family: var(--body-font);
+}
+
+p {
+  color: var(--muted);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient-bg {
+  background: var(--brand-gradient);
+  color: var(--white);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border: 1px solid var(--primary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  color: var(--primary-btn-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-brand);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--brand-gradient);
+  color: var(--white);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-brand);
+}
+
+body.dark-mode .btn-secondary {
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-color);
+  border-color: var(--secondary-btn-border);
+}
+
+body.dark-mode .btn-secondary:hover {
+  background: var(--secondary-btn-hover-bg);
+  color: var(--secondary-btn-hover-color);
+  border-color: var(--secondary-btn-hover-bg);
+  transform: translateY(-3px);
+}

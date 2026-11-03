@@ -1,0 +1,1481 @@
+.fico-icon-library {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fico-page {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+  overflow: clip;
+  transition: var(--theme-transition);
+}
+
+.fico-container {
+  width: min(calc(100% - 100px), 1240px);
+  margin-inline: auto;
+}
+
+.fico-section {
+  padding-block: 88px;
+  scroll-margin-top: 100px;
+}
+
+.fico-section-heading {
+  max-width: 800px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.fico-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 15px;
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, transparent);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+  color: var(--primary);
+  font-size: calc(var(--nav-font-size) * 0.8);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--line-height);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.fico-eyebrow svg,
+.fico-svg,
+.fico-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fico-eyebrow svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.fico-svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.fico-title {
+  font-family: var(--heading-font);
+  font-size: var(--section-heading-font-size);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.fico-intro {
+  max-width: 720px;
+  margin: 17px auto 0;
+  font-size: var(--body-font-size);
+  line-height: var(--line-height);
+  text-wrap: pretty;
+}
+
+.fico-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.fico-actions a {
+  min-height: 46px;
+}
+
+.fico-actions .fico-svg {
+  transition: transform 0.3s ease;
+}
+
+.fico-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--brand-gradient-soft);
+  color: var(--secondary);
+}
+
+.fico-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.fico-micro {
+  display: block;
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.7);
+  font-weight: var(--button-font-weight);
+  line-height: var(--line-height);
+  letter-spacing: 0.09em;
+}
+
+.fico-pill {
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.7);
+  line-height: var(--line-height);
+}
+
+.fico-caption {
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.84);
+  line-height: var(--line-height);
+  text-align: center;
+}
+
+.fico-section-note {
+  max-width: 850px;
+  margin: 23px auto 0;
+}
+
+.fico-trust {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px 22px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.85);
+  font-weight: var(--nav-font-weight);
+}
+
+.fico-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.fico-trust span::before {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: var(--radius-round);
+  background: var(--primary);
+  content: "";
+}
+
+.fico-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fico-tags span {
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.76);
+}
+
+.fico-check-list {
+  display: grid;
+  gap: 12px;
+}
+
+.fico-check-list li {
+  position: relative;
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-check-list li::before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 8px;
+  height: 5px;
+  border-left: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  transform: rotate(-45deg);
+  content: "";
+}
+
+.fico-page button {
+  font-family: var(--body-font);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fico-page a:focus-visible,
+.fico-page button:focus-visible,
+.fico-page summary:focus-visible,
+.fico-page [tabindex="0"]:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+}
+
+.fico-hero {
+  position: relative;
+  isolation: isolate;
+  padding: 60px 0 45px;
+  background:
+    radial-gradient(
+      ellipse at 50% 75%,
+      color-mix(in srgb, var(--secondary) 6%, transparent),
+      transparent 65%
+    ),
+    var(--background);
+}
+
+.fico-hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 70px 70px;
+  opacity: 0.16;
+  mask-image: linear-gradient(transparent, black, transparent);
+  content: "";
+  pointer-events: none;
+}
+
+.fico-hero__ambient {
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  left: 50%;
+  width: 450px;
+  height: 300px;
+  border-radius: var(--radius-round);
+  background: var(--brand-gradient);
+  opacity: 0.08;
+  filter: blur(90px);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.fico-hero__content {
+  max-width: 940px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.fico-hero h1 {
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.fico-hero h1 .gradient-text {
+  display: block;
+}
+
+.fico-finance-preview {
+  max-width: 1120px;
+  margin: 38px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background: var(--background);
+  box-shadow: var(--shadow-panel);
+}
+
+.fico-workspace-bar {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 22px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.66);
+  font-weight: var(--button-font-weight);
+  letter-spacing: 0.05em;
+}
+
+.fico-workspace-bar .fico-pill {
+  margin-left: auto;
+  letter-spacing: 0;
+}
+
+.fico-window-dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.fico-window-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-round);
+  background: var(--border);
+}
+
+.fico-window-dots i:first-child {
+  background: var(--primary);
+}
+
+.fico-window-dots i:nth-child(2) {
+  background: var(--secondary);
+  opacity: 0.5;
+}
+
+.fico-finance-preview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 0.9fr);
+}
+
+.fico-finance-preview__document,
+.fico-balance,
+.fico-assignment-preview {
+  min-width: 0;
+  padding: 27px;
+}
+
+.fico-balance,
+.fico-assignment-preview {
+  border-left: 1px solid var(--border);
+}
+
+.fico-finance-preview__document-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.fico-finance-preview__document-title h2 {
+  font-size: calc(var(--section-heading-font-size) * 0.46);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-finance-preview__document-title p {
+  margin-top: 5px;
+  font-size: calc(var(--nav-font-size) * 0.83);
+}
+
+.fico-mini-details {
+  margin-top: 20px;
+}
+
+.fico-mini-details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: calc(var(--nav-font-size) * 0.78);
+}
+
+.fico-mini-details dt {
+  color: var(--muted);
+}
+
+.fico-mini-details dd {
+  margin: 0;
+  color: var(--text);
+  text-align: right;
+}
+
+.fico-balance__columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.fico-balance__columns > div {
+  padding: 0 12px;
+}
+
+.fico-balance__columns > div:first-child {
+  padding-left: 0;
+}
+
+.fico-balance__columns > div + div {
+  border-left: 1px solid var(--border);
+}
+
+.fico-balance__columns span {
+  display: block;
+  margin-bottom: 19px;
+  color: var(--text);
+  font-size: var(--nav-font-size);
+  font-weight: var(--nav-font-weight);
+}
+
+.fico-balance__columns i {
+  display: block;
+  height: 7px;
+  margin: 12px 0;
+  border-radius: var(--radius-pill);
+  background: var(--border);
+}
+
+.fico-balance__columns i:nth-of-type(2) {
+  width: 68%;
+  background: var(--brand-gradient);
+  opacity: 0.65;
+}
+
+.fico-balance__note {
+  display: block;
+  margin-top: 21px;
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.7);
+}
+
+.fico-assignment-preview {
+  background: var(--brand-gradient-soft);
+}
+
+.fico-assignment-preview h3 {
+  margin: 12px 0 19px;
+  font-size: calc(var(--section-heading-font-size) * 0.46);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-assignment-preview > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.81);
+}
+
+.fico-assignment-preview i {
+  width: 5px;
+  height: 5px;
+  border-radius: var(--radius-round);
+  background: var(--primary);
+}
+
+.fico-finance-preview__footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: calc(var(--nav-font-size) * 0.72);
+  text-align: center;
+}
+
+.fico-services,
+.fico-review,
+.fico-deliverables {
+  background: var(--surface);
+}
+
+.fico-service-ledger {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background: var(--background);
+  box-shadow: var(--shadow-soft);
+}
+
+.fico-service-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 0.65fr);
+  align-items: center;
+  gap: 27px;
+  padding: 28px;
+  transition: background-color 0.3s ease;
+}
+
+.fico-service-row + .fico-service-row {
+  border-top: 1px solid var(--border);
+}
+
+.fico-service-row::before {
+  position: absolute;
+  inset: 15px auto 15px 0;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--brand-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  content: "";
+}
+
+.fico-service-row__name {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.fico-service-row h3 {
+  margin-top: 5px;
+  font-size: calc(var(--section-heading-font-size) * 0.43);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-service-row > p {
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-allocation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px minmax(0, 1fr);
+  align-items: center;
+  max-width: 1050px;
+  margin-inline: auto;
+}
+
+.fico-allocation__source {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.fico-allocation__source .fico-icon {
+  margin-bottom: 17px;
+}
+
+.fico-allocation__source h3 {
+  margin: 8px 0 10px;
+  font-size: calc(var(--section-heading-font-size) * 0.53);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-allocation__source p {
+  font-size: var(--nav-font-size);
+}
+
+.fico-allocation__junction {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.fico-allocation__junction::before {
+  position: absolute;
+  z-index: -1;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border);
+  content: "";
+}
+
+.fico-allocation__junction > svg {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  background: var(--background);
+}
+
+.fico-allocation__junction span {
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.78);
+}
+
+.fico-allocation__destinations {
+  display: grid;
+  gap: 12px;
+}
+
+.fico-allocation__destinations button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 66px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--background);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.fico-allocation__destinations button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  background: var(--brand-gradient-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.fico-allocation__destinations button > span {
+  color: var(--primary);
+  font-size: calc(var(--nav-font-size) * 0.75);
+  font-weight: var(--button-font-weight);
+}
+
+.fico-allocation__destinations strong {
+  flex: 1;
+  font-family: var(--heading-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--section-heading-font-weight);
+}
+
+.fico-allocation__destinations .fico-svg {
+  width: 16px;
+  height: 16px;
+  color: var(--muted);
+}
+
+.fico-allocation-caption {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 780px;
+  margin: 28px auto 0;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.fico-allocation-caption svg {
+  margin-top: 3px;
+  color: var(--primary);
+}
+
+.fico-allocation-caption p {
+  min-height: 46px;
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-cost-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 35px;
+}
+
+.fico-cost-notes article + article {
+  padding-left: 28px;
+  border-left: 1px solid var(--border);
+}
+
+.fico-cost-notes h3 {
+  margin: 10px 0;
+  font-size: calc(var(--section-heading-font-size) * 0.46);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-cost-notes p {
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-review-desk {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background: var(--background);
+  box-shadow: var(--shadow-panel);
+}
+
+.fico-review-register {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 29px;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.fico-review-register > .fico-micro {
+  margin-bottom: 9px;
+}
+
+.fico-review-register button {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  width: 100%;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--background);
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.fico-review-register button[aria-selected="true"] {
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  background: var(--brand-gradient-soft);
+}
+
+.fico-review-register__number {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--background);
+  color: var(--primary);
+  font-size: calc(var(--nav-font-size) * 0.74);
+  font-weight: var(--button-font-weight);
+}
+
+.fico-review-register strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--text);
+  font-family: var(--heading-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-review-register strong + span {
+  display: block;
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.84);
+  line-height: var(--line-height);
+}
+
+.fico-review-sheets {
+  min-width: 0;
+}
+
+.fico-review-sheet {
+  padding: 31px;
+}
+
+.fico-review-sheet[hidden] {
+  display: none;
+}
+
+.fico-review-sheet__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.fico-review-sheet > h3 {
+  margin-bottom: 25px;
+  font-size: calc(var(--section-heading-font-size) * 0.58);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-review-details > div {
+  display: grid;
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.fico-review-details dt {
+  color: var(--text);
+  font-size: calc(var(--nav-font-size) * 0.88);
+  font-weight: var(--button-font-weight);
+}
+
+.fico-review-details dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-transaction-lanes {
+  border-top: 1px solid var(--border);
+}
+
+.fico-transaction-lane {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) 60px minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 28px 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fico-transaction-lane__source h3 {
+  margin-top: 9px;
+  font-size: calc(var(--section-heading-font-size) * 0.46);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-transaction-lane__connector {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+.fico-transaction-lane__connector::before {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  content: "";
+}
+
+.fico-transaction-lane__destination {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.fico-transaction-lane__destination strong {
+  color: var(--text);
+  font-family: var(--heading-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.5;
+}
+
+.fico-transaction-lane > p {
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-readiness-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 27px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.fico-readiness-strip span {
+  padding: 5px 12px;
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.88);
+  text-align: center;
+}
+
+.fico-readiness-strip span + span {
+  border-left: 1px solid var(--border);
+}
+
+.fico-bookshelf {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 23px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--border);
+}
+
+.fico-folder {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px 22px 22px 6px;
+  background: var(--background);
+  box-shadow: var(--shadow-soft);
+}
+
+.fico-folder summary {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  min-height: 270px;
+  padding: 26px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.fico-folder summary::-webkit-details-marker {
+  display: none;
+}
+
+.fico-folder__tab {
+  color: var(--muted);
+  font-size: calc(var(--nav-font-size) * 0.7);
+  font-weight: var(--button-font-weight);
+  letter-spacing: 0.08em;
+}
+
+.fico-folder summary > strong {
+  color: var(--text);
+  font-family: var(--heading-font);
+  font-size: calc(var(--section-heading-font-size) * 0.5);
+  font-weight: var(--section-heading-font-weight);
+  line-height: 1.4;
+}
+
+.fico-folder__description {
+  color: var(--muted);
+  font-size: var(--nav-font-size);
+  line-height: var(--line-height);
+}
+
+.fico-folder__toggle {
+  position: absolute;
+  top: 23px;
+  right: 22px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-round);
+}
+
+.fico-folder__toggle::before,
+.fico-folder__toggle::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 1px;
+  background: var(--primary);
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.fico-folder__toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.fico-folder[open] .fico-folder__toggle::after {
+  transform: translate(-50%, -50%);
+}
+
+.fico-folder[open] {
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.fico-folder__body {
+  padding: 0 26px 26px;
+}
+
+.fico-folder__body .fico-check-list {
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.fico-folder__body > p {
+  margin-top: 22px;
+  padding: 13px;
+  border-radius: var(--radius-sm);
+  background: var(--brand-gradient-soft);
+  font-size: calc(var(--nav-font-size) * 0.84);
+  line-height: var(--line-height);
+}
+
+.fico-cta {
+  padding: 55px 0 74px;
+}
+
+.fico-cta__card {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 1020px);
+  margin-inline: auto;
+  padding: 43px 48px 37px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--primary) 24%, var(--border));
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      color-mix(in srgb, var(--primary) 6%, transparent),
+      transparent 45%
+    ),
+    linear-gradient(135deg, var(--background), var(--surface));
+  box-shadow: var(--shadow-panel);
+  text-align: center;
+}
+
+.fico-cta .fico-title {
+  max-width: 830px;
+  margin-inline: auto;
+}
+
+.fico-cta__decoration {
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  height: 220px;
+  border: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+  border-radius: var(--radius-round);
+  pointer-events: none;
+}
+
+.fico-cta__decoration--one {
+  top: -110px;
+  right: -70px;
+}
+
+.fico-cta__decoration--two {
+  bottom: -150px;
+  left: -70px;
+  border-color: color-mix(in srgb, var(--secondary) 22%, transparent);
+}
+
+body.dark-mode .fico-icon {
+  color: var(--primary);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .fico-actions a:hover .fico-svg {
+    transform: translateX(3px);
+  }
+
+  .fico-service-row:hover {
+    background: var(--surface);
+  }
+
+  .fico-service-row:hover::before {
+    opacity: 1;
+  }
+
+  .fico-allocation__destinations button:hover {
+    border-color: var(--primary);
+  }
+
+  .fico-review-register button:hover {
+    border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  }
+
+  .fico-folder summary:hover {
+    background: var(--brand-gradient-soft);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fico-container {
+    width: calc(100% - 64px);
+  }
+
+  .fico-hero h1 {
+    font-size: calc(var(--heading-font-size) * 0.9);
+  }
+
+  .fico-title {
+    font-size: calc(var(--section-heading-font-size) * 0.92);
+  }
+
+  .fico-finance-preview__document,
+  .fico-balance,
+  .fico-assignment-preview {
+    padding: 23px;
+  }
+
+  .fico-service-row {
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .fico-review-register,
+  .fico-review-sheet {
+    padding: 25px;
+  }
+
+  .fico-transaction-lane {
+    grid-template-columns: minmax(0, 0.9fr) 40px minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 19px;
+  }
+
+  .fico-bookshelf {
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fico-section {
+    padding-block: 60px;
+  }
+
+  .fico-hero {
+    padding-top: 45px;
+  }
+
+  .fico-hero h1 {
+    font-size: calc(var(--heading-font-size) * 0.8);
+  }
+
+  .fico-title {
+    font-size: calc(var(--section-heading-font-size) * 0.84);
+  }
+
+  .fico-finance-preview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fico-assignment-preview {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
+  .fico-service-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    row-gap: 17px;
+  }
+
+  .fico-service-row .fico-tags {
+    grid-column: 2;
+  }
+
+  .fico-allocation {
+    grid-template-columns: minmax(0, 1fr) 100px minmax(0, 1fr);
+  }
+
+  .fico-review-desk {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .fico-review-register button {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .fico-review-details > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 7px;
+  }
+
+  .fico-transaction-lane {
+    grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr);
+    row-gap: 18px;
+  }
+
+  .fico-transaction-lane > p {
+    grid-column: 1 / -1;
+  }
+
+  .fico-folder summary {
+    min-height: 285px;
+    padding: 23px;
+  }
+
+  .fico-folder__body {
+    padding-inline: 23px;
+  }
+
+  .fico-folder summary > strong {
+    font-size: calc(var(--section-heading-font-size) * 0.46);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fico-container {
+    width: calc(100% - 48px);
+  }
+
+  .fico-cost-notes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 23px;
+  }
+
+  .fico-cost-notes article + article {
+    padding: 23px 0 0;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
+  .fico-review-desk {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fico-review-register {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .fico-bookshelf {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .fico-folder summary {
+    min-height: 0;
+    gap: 14px;
+  }
+
+  .fico-folder__description {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fico-container {
+    width: calc(100% - 40px);
+  }
+
+  .fico-section {
+    padding-block: 48px;
+  }
+
+  .fico-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .fico-hero h1 {
+    font-size: calc(var(--heading-font-size) * 0.7);
+  }
+
+  .fico-title {
+    font-size: calc(var(--section-heading-font-size) * 0.76);
+  }
+
+  .fico-intro {
+    font-size: calc(var(--body-font-size) * 0.94);
+  }
+
+  .fico-service-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .fico-service-row .fico-tags {
+    grid-column: 1;
+  }
+
+  .fico-allocation {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .fico-allocation__source {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .fico-allocation__junction {
+    padding-block: 10px;
+  }
+
+  .fico-allocation__junction::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: auto;
+  }
+
+  .fico-allocation__junction span {
+    padding-inline: 10px;
+    background: var(--background);
+  }
+
+  .fico-allocation__destinations {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .fico-readiness-strip {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 10px 18px;
+  }
+
+  .fico-readiness-strip span {
+    padding: 13px;
+  }
+
+  .fico-readiness-strip span + span {
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
+  .fico-cta {
+    padding-block: 35px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fico-container {
+    width: calc(100% - 32px);
+  }
+
+  .fico-hero {
+    padding-top: 36px;
+  }
+
+  .fico-hero h1 {
+    font-size: calc(var(--heading-font-size) * 0.6);
+    line-height: 1.2;
+  }
+
+  .fico-title {
+    font-size: calc(var(--section-heading-font-size) * 0.7);
+    line-height: 1.25;
+  }
+
+  .fico-actions {
+    gap: 10px;
+  }
+
+  .fico-actions a {
+    width: 100%;
+    padding-inline: 16px;
+    font-size: calc(var(--button-font-size) * 0.92);
+    white-space: normal;
+    text-align: center;
+  }
+
+  .fico-eyebrow {
+    font-size: calc(var(--nav-font-size) * 0.74);
+  }
+
+  .fico-trust {
+    gap: 9px 15px;
+    font-size: calc(var(--nav-font-size) * 0.8);
+  }
+
+  .fico-finance-preview {
+    margin-top: 29px;
+  }
+
+  .fico-workspace-bar {
+    gap: 9px;
+    padding: 13px 15px;
+    font-size: calc(var(--nav-font-size) * 0.55);
+  }
+
+  .fico-finance-preview__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fico-finance-preview__document,
+  .fico-balance,
+  .fico-assignment-preview {
+    grid-column: 1;
+    padding: 22px;
+    border-left: 0;
+  }
+
+  .fico-balance {
+    border-top: 1px solid var(--border);
+  }
+
+  .fico-service-row {
+    padding: 23px 20px;
+  }
+
+  .fico-service-row__name {
+    gap: 11px;
+  }
+
+  .fico-service-row h3 {
+    font-size: calc(var(--section-heading-font-size) * 0.41);
+  }
+
+  .fico-allocation__source {
+    padding: 25px;
+  }
+
+  .fico-allocation__source h3 {
+    font-size: calc(var(--section-heading-font-size) * 0.47);
+  }
+
+  .fico-cost-notes h3 {
+    font-size: calc(var(--section-heading-font-size) * 0.43);
+  }
+
+  .fico-review-register,
+  .fico-review-sheet {
+    padding: 22px;
+  }
+
+  .fico-review-sheet > h3 {
+    font-size: calc(var(--section-heading-font-size) * 0.5);
+  }
+
+  .fico-review-register strong {
+    font-size: calc(var(--body-font-size) * 0.95);
+  }
+
+  .fico-transaction-lane {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 25px 0;
+  }
+
+  .fico-transaction-lane > p {
+    grid-column: 1;
+  }
+
+  .fico-transaction-lane__connector {
+    height: 28px;
+    padding-left: 15px;
+  }
+
+  .fico-transaction-lane__connector::before {
+    display: none;
+  }
+
+  .fico-transaction-lane__connector svg {
+    transform: rotate(90deg);
+  }
+
+  .fico-folder summary,
+  .fico-folder__body {
+    padding-inline: 22px;
+  }
+
+  .fico-cta__card {
+    padding: 31px 22px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .fico-hero h1 {
+    font-size: calc(var(--heading-font-size) * 0.55);
+  }
+
+  .fico-title {
+    font-size: calc(var(--section-heading-font-size) * 0.66);
+  }
+
+  .fico-window-dots {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fico-page *,
+  .fico-page *::before,
+  .fico-page *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

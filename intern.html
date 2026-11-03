@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Apply for an internship at Techechos Innovation Private Limited."
+    />
+
+    <meta name="author" content="Techechos Innovation Private Limited" />
+
+    <meta name="theme-color" content="#691790" />
+
+    <title>Internship Application | Techechos Innovation</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="intern.css" />
+  </head>
+
+  <body>
+    <main class="intern-page">
+      <section class="intern-apply">
+        <div class="intern-container">
+          <aside class="intern-info">
+            <div class="intern-decoration" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="intern-brand">
+              <a
+                href="index.html"
+                class="intern-logo-icon"
+                aria-label="Techechos Innovation Home"
+              >
+                <img
+                  src="./images/logo.png"
+                  alt="Techechos Innovation"
+                  class="intern-logo"
+                  width="58"
+                  height="58"
+                />
+              </a>
+
+              <span class="intern-logo-divider" aria-hidden="true"></span>
+
+              <div class="intern-brand-content">
+                <a href="index.html" class="intern-brand-name">
+                  <span class="gradient-text"> Techechos Innovation </span>
+                </a>
+
+                <div class="intern-subtitle">
+                  <span></span>
+                  <small class="gradient-text">PRIVATE LIMITED</small>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="intern-intro">
+              <span class="intern-tag"> START YOUR CAREER JOURNEY </span>
+
+              <h1>
+                Learn today.
+                <span class="gradient-text"> Lead tomorrow. </span>
+              </h1>
+
+              <p>
+                Turn your knowledge into practical experience. Learn from
+                real-world projects, develop your skills, and take the next step
+                towards your professional future.
+              </p>
+            </div>
+
+            <div class="intern-benefits">
+              <div class="intern-benefit">
+                <span class="intern-benefit-icon">
+                  <i data-lucide="graduation-cap"></i>
+                </span>
+
+                <div>
+                  <h2>Learn by Doing</h2>
+                  <p>Gain practical experience through real-world projects.</p>
+                </div>
+              </div>
+
+              <div class="intern-benefit">
+                <span class="intern-benefit-icon">
+                  <i data-lucide="lightbulb"></i>
+                </span>
+
+                <div>
+                  <h2>Develop Your Skills</h2>
+                  <p>Strengthen your technical and professional abilities.</p>
+                </div>
+              </div>
+
+              <div class="intern-benefit">
+                <span class="intern-benefit-icon">
+                  <i data-lucide="rocket"></i>
+                </span>
+
+                <div>
+                  <h2>Build Your Future</h2>
+                  <p>Take your first steps towards a successful career.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="intern-info-footer">
+              <span></span>
+              Your future starts with the right opportunity.
+            </div>
+          </aside>
+
+          <div class="intern-right">
+            <form
+              class="intern-form"
+              id="internship-form"
+              enctype="multipart/form-data"
+            >
+              <header class="intern-form-heading">
+                <span class="intern-tag"> JOIN OUR INTERNSHIP PROGRAM </span>
+
+                <h2>
+                  Start your journey.
+                  <span class="gradient-text"> Make an impact. </span>
+                </h2>
+
+                <p>
+                  Complete your details below. Fields marked * are required.
+                </p>
+              </header>
+
+              <fieldset class="intern-fieldset">
+                <legend>
+                  <span>01</span>
+                  Personal Details
+                </legend>
+
+                <div class="intern-form-grid">
+                  <div class="intern-field">
+                    <label for="intern-name">Full Name *</label>
+
+                    <input
+                      type="text"
+                      id="intern-name"
+                      name="fullName"
+                      autocomplete="name"
+                      maxlength="120"
+                      placeholder="Your full name"
+                      required
+                    />
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-email">Email Address *</label>
+
+                    <input
+                      type="email"
+                      id="intern-email"
+                      name="email"
+                      autocomplete="email"
+                      maxlength="254"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-phone">Phone Number *</label>
+
+                    <input
+                      type="tel"
+                      id="intern-phone"
+                      name="phone"
+                      autocomplete="tel"
+                      maxlength="30"
+                      placeholder="Include country code"
+                      required
+                    />
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-location">Current Location *</label>
+
+                    <input
+                      type="text"
+                      id="intern-location"
+                      name="location"
+                      autocomplete="address-level2"
+                      maxlength="150"
+                      placeholder="City, State"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="intern-fieldset">
+                <legend>
+                  <span>02</span>
+                  Educational Details
+                </legend>
+
+                <div class="intern-form-grid">
+                  <div class="intern-field">
+                    <label for="intern-education">Current Education *</label>
+
+                    <select id="intern-education" name="education" required>
+                      <option value="">Select Education</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="Undergraduate">Undergraduate</option>
+                      <option value="Postgraduate">Postgraduate</option>
+                      <option value="Recent Graduate">Recent Graduate</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-course">Course / Specialization *</label>
+
+                    <input
+                      type="text"
+                      id="intern-course"
+                      name="course"
+                      maxlength="150"
+                      placeholder="e.g. B.Tech CSE, BCA, MBA"
+                      required
+                    />
+                  </div>
+
+                  <div class="intern-field intern-field-full">
+                    <label for="intern-college">College / Institution *</label>
+
+                    <input
+                      type="text"
+                      id="intern-college"
+                      name="college"
+                      maxlength="180"
+                      placeholder="Enter your college or institution"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="intern-fieldset">
+                <legend>
+                  <span>03</span>
+                  Internship Preferences
+                </legend>
+
+                <div class="intern-form-grid">
+                  <div class="intern-field">
+                    <label for="intern-position">Preferred Position *</label>
+
+                    <select id="intern-position" name="position" required>
+                      <option value="">Select Position</option>
+                      <option value="frontend">Frontend Developer</option>
+                      <option value="backend">Backend Developer</option>
+                      <option value="fullstack">Full Stack Developer</option>
+                      <option value="wordpress">WordPress Developer</option>
+                      <option value="hr">HR Team</option>
+                      <option value="sap-sd">SAP SD</option>
+                      <option value="sap-fico">SAP FICO</option>
+                    </select>
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-academic-year">
+                      Current Year of Study *
+                    </label>
+
+                    <select
+                      id="intern-academic-year"
+                      name="academicYear"
+                      required
+                    >
+                      <option value="">Select Academic Year</option>
+                      <option value="1st Year">1st Year</option>
+                      <option value="2nd Year">2nd Year</option>
+                      <option value="3rd Year">3rd Year</option>
+                      <option value="Final Year">Final Year</option>
+                      <option value="Recently Graduated">
+                        Recently Graduated
+                      </option>
+                      <option value="Not Currently Studying">
+                        Not Currently Studying
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-start-date"
+                      >Preferred Start Date *</label
+                    >
+
+                    <input
+                      type="date"
+                      id="intern-start-date"
+                      name="startDate"
+                      required
+                    />
+
+                    <small class="intern-help">
+                      Select today or a future date.
+                    </small>
+                  </div>
+
+                  <div class="intern-field">
+                    <label for="intern-duration">Internship Duration *</label>
+
+                    <select id="intern-duration" name="duration" required>
+                      <option value="">Select Duration</option>
+                      <option value="1 Month">1 Month</option>
+                      <option value="2 Months">2 Months</option>
+                      <option value="3 Months">3 Months</option>
+                      <option value="6 Months">6 Months</option>
+                    </select>
+                  </div>
+
+                  <div class="intern-field intern-field-full">
+                    <label for="intern-availability"
+                      >Preferred Availability *</label
+                    >
+
+                    <select
+                      id="intern-availability"
+                      name="availability"
+                      required
+                    >
+                      <option value="">Select Availability</option>
+                      <option value="Full-time">Full-time</option>
+                      <option value="Part-time">Part-time</option>
+                      <option value="Flexible">Flexible</option>
+                    </select>
+                  </div>
+
+                  <div class="intern-field intern-field-full">
+                    <label for="intern-linkedin">LinkedIn Profile</label>
+
+                    <input
+                      type="url"
+                      id="intern-linkedin"
+                      name="linkedin"
+                      maxlength="2000"
+                      placeholder="https://"
+                    />
+                  </div>
+
+                  <div class="intern-field intern-field-full">
+                    <label for="intern-portfolio">Portfolio / GitHub</label>
+
+                    <input
+                      type="url"
+                      id="intern-portfolio"
+                      name="portfolio"
+                      maxlength="2000"
+                      placeholder="https://"
+                    />
+                  </div>
+
+                  <div class="intern-field intern-field-full">
+                    <label for="intern-about">Tell Us About Yourself</label>
+
+                    <textarea
+                      id="intern-about"
+                      name="about"
+                      rows="5"
+                      maxlength="2000"
+                      placeholder="Tell us about your interests, skills, projects and what you hope to learn."
+                      aria-describedby="intern-character-count"
+                    ></textarea>
+
+                    <span
+                      class="intern-character-count"
+                      id="intern-character-count"
+                    >
+                      0 / 2000
+                    </span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="intern-fieldset">
+                <legend>
+                  <span>04</span>
+                  Upload Your Résumé
+                </legend>
+
+                <div class="intern-field">
+                  <label for="intern-resume">Select Résumé *</label>
+
+                  <div class="intern-upload">
+                    <div class="intern-upload-intro">
+                      <span class="intern-upload-icon">
+                        <i data-lucide="upload-cloud"></i>
+                      </span>
+
+                      <div>
+                        <strong>Showcase your potential.</strong>
+
+                        <p id="intern-resume-help">
+                          PDF, DOC, or DOCX · Maximum 5 MB
+                        </p>
+                      </div>
+                    </div>
+
+                    <input
+                      type="file"
+                      id="intern-resume"
+                      name="resume"
+                      accept=".pdf,.doc,.docx"
+                      aria-describedby="intern-resume-help intern-resume-error"
+                      required
+                    />
+                  </div>
+
+                  <p
+                    class="intern-error"
+                    id="intern-resume-error"
+                    aria-live="polite"
+                  ></p>
+                </div>
+              </fieldset>
+
+              <div class="intern-confirmation">
+                <input
+                  type="checkbox"
+                  id="intern-confirmation"
+                  name="informationConfirmed"
+                  value="yes"
+                  required
+                />
+
+                <label for="intern-confirmation">
+                  * I confirm that the information provided is accurate and that
+                  I am authorized to share the selected résumé.
+                </label>
+              </div>
+
+              <p class="intern-privacy">
+                Please share only relevant application information. Do not
+                upload confidential client records or identity documents.
+              </p>
+
+              <button
+                type="submit"
+                class="btn-primary intern-submit"
+                id="intern-submit"
+              >
+                Submit Internship Application
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </form>
+            <section
+              class="intern-success"
+              id="intern-success"
+              aria-labelledby="intern-success-title"
+              hidden
+            >
+              <div class="intern-success-icon">
+                <i data-lucide="check"></i>
+              </div>
+
+              <span class="intern-tag">
+                APPLICATION SUCCESSFULLY SUBMITTED
+              </span>
+
+              <h2 id="intern-success-title" tabindex="-1">
+                Your journey begins.
+                <span class="gradient-text">
+                  Application submitted successfully!
+                </span>
+              </h2>
+
+              <p>
+                Thank you for your interest in joining Techechos Innovation. We
+                appreciate your application and look forward to reviewing your
+                details.
+              </p>
+
+              <div class="intern-success-actions">
+                <a href="careers.html" class="btn-primary"> Back to Careers </a>
+
+                <a href="index.html" class="btn-secondary"> Go to Home </a>
+              </div>
+
+              <button type="button" class="intern-restart" id="intern-restart">
+                Submit another application
+              </button>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="intern.js"></script>
+  </body>
+</html>
